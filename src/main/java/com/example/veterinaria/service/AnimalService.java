@@ -46,7 +46,7 @@ public class AnimalService {
             throw new RuntimeException("Animal não encontrado");
         }
 
-        response.get().setAnimal(novoAnimal.getAnimal());
+        response.get().setNome(novoAnimal.getNome());
         return animalRepository.save(response.get());
     }
 }
